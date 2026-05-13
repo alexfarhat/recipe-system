@@ -1,0 +1,830 @@
+import { Dish } from '../types';
+
+export const seedDishes: Dish[] = [
+{
+  id: 'dish-1',
+  title: 'Smoked Paprika Lamb Tagine',
+  description:
+  'Slow-cooked Moroccan lamb stew with aromatic spices, dried apricots, and tender vegetables. Rich, warming, and deeply flavorful.',
+  category: 'Dinner',
+  cookTime: 120,
+  calories: 485,
+  image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?w=800',
+  tags: ['moroccan', 'slow-cooked', 'comfort-food', 'spiced'],
+  ingredients: [
+  {
+    id: 'ing-1-1',
+    name: 'lamb shoulder',
+    amount: '2',
+    unit: 'lbs',
+    note: 'cut into chunks'
+  },
+  {
+    id: 'ing-1-2',
+    name: 'smoked paprika',
+    amount: '2',
+    unit: 'tablespoons'
+  },
+  { id: 'ing-1-3', name: 'cumin', amount: '1', unit: 'tablespoon' },
+  { id: 'ing-1-4', name: 'cinnamon stick', amount: '1', unit: '' },
+  {
+    id: 'ing-1-5',
+    name: 'dried apricots',
+    amount: '1',
+    unit: 'cup',
+    note: 'halved'
+  },
+  {
+    id: 'ing-1-6',
+    name: 'chickpeas',
+    amount: '1',
+    unit: 'can',
+    note: 'drained'
+  },
+  {
+    id: 'ing-1-7',
+    name: 'onion',
+    amount: '1',
+    unit: 'large',
+    note: 'diced'
+  },
+  {
+    id: 'ing-1-8',
+    name: 'garlic',
+    amount: '4',
+    unit: 'cloves',
+    note: 'minced'
+  },
+  { id: 'ing-1-9', name: 'tomato paste', amount: '2', unit: 'tablespoons' },
+  { id: 'ing-1-10', name: 'lamb stock', amount: '2', unit: 'cups' }],
+
+  instructions: [
+  {
+    id: 'inst-1-1',
+    step: 1,
+    text: 'Season lamb with paprika, cumin, salt, and pepper. Brown in batches in a heavy pot with olive oil.'
+  },
+  {
+    id: 'inst-1-2',
+    step: 2,
+    text: 'Remove lamb and sauté onions until soft. Add garlic and tomato paste, cook 2 minutes.'
+  },
+  {
+    id: 'inst-1-3',
+    step: 3,
+    text: 'Return lamb to pot. Add stock, cinnamon stick, and apricots. Bring to boil, then reduce to simmer.'
+  },
+  {
+    id: 'inst-1-4',
+    step: 4,
+    text: 'Cover and cook on low heat for 90 minutes until lamb is tender.'
+  },
+  {
+    id: 'inst-1-5',
+    step: 5,
+    text: 'Add chickpeas in the last 15 minutes. Adjust seasoning and serve with couscous.'
+  }],
+
+  chefNotes:
+  'The smoked paprika adds a subtle depth. For extra richness, stir in a tablespoon of honey before serving. This dish tastes even better the next day.',
+  additionalDetails:
+  'Traditionally served with fluffy couscous or warm flatbread. Garnish with fresh cilantro and toasted almonds.',
+  accessGroups: ['group-1', 'group-2'],
+  createdBy: 'admin',
+  createdAt: '2026-04-10T10:00:00Z'
+},
+{
+  id: 'dish-2',
+  title: 'Charred Corn & Black Bean Tacos',
+  description:
+  'Vibrant vegetarian tacos with smoky charred corn, black beans, avocado crema, and pickled red onions. Fresh, bright, and satisfying.',
+  category: 'Lunch',
+  cookTime: 25,
+  calories: 340,
+  image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800',
+  tags: ['vegetarian', 'mexican', 'quick', 'fresh'],
+  ingredients: [
+  {
+    id: 'ing-2-1',
+    name: 'corn kernels',
+    amount: '2',
+    unit: 'cups',
+    note: 'fresh or frozen'
+  },
+  {
+    id: 'ing-2-2',
+    name: 'black beans',
+    amount: '1',
+    unit: 'can',
+    note: 'drained and rinsed'
+  },
+  { id: 'ing-2-3', name: 'corn tortillas', amount: '8', unit: '' },
+  { id: 'ing-2-4', name: 'avocado', amount: '1', unit: 'large' },
+  { id: 'ing-2-5', name: 'lime', amount: '2', unit: '' },
+  {
+    id: 'ing-2-6',
+    name: 'red onion',
+    amount: '1',
+    unit: 'small',
+    note: 'thinly sliced'
+  },
+  {
+    id: 'ing-2-7',
+    name: 'cilantro',
+    amount: '1/2',
+    unit: 'cup',
+    note: 'chopped'
+  },
+  { id: 'ing-2-8', name: 'cumin', amount: '1', unit: 'teaspoon' },
+  { id: 'ing-2-9', name: 'chili powder', amount: '1/2', unit: 'teaspoon' },
+  { id: 'ing-2-10', name: 'sour cream', amount: '1/4', unit: 'cup' }],
+
+  instructions: [
+  {
+    id: 'inst-2-1',
+    step: 1,
+    text: 'Quick-pickle red onions: combine with juice of 1 lime and a pinch of salt. Set aside.'
+  },
+  {
+    id: 'inst-2-2',
+    step: 2,
+    text: 'Char corn in a hot dry skillet until blackened in spots, about 5 minutes. Season with cumin, chili powder, salt.'
+  },
+  {
+    id: 'inst-2-3',
+    step: 3,
+    text: 'Warm black beans in a small pot with a splash of water.'
+  },
+  {
+    id: 'inst-2-4',
+    step: 4,
+    text: 'Make avocado crema: blend avocado, sour cream, juice of 1 lime, and salt until smooth.'
+  },
+  {
+    id: 'inst-2-5',
+    step: 5,
+    text: 'Warm tortillas. Assemble tacos with beans, corn, pickled onions, avocado crema, and cilantro.'
+  }],
+
+  chefNotes:
+  'For extra heat, add sliced jalapeños or a drizzle of hot sauce. The pickled onions can be made ahead and stored in the fridge for up to a week.',
+  additionalDetails:
+  'Serve with lime wedges and your favorite salsa. Pairs well with a cold Mexican beer or fresh agua fresca.',
+  accessGroups: ['group-1'],
+  createdBy: 'admin',
+  createdAt: '2026-04-12T14:30:00Z'
+},
+{
+  id: 'dish-3',
+  title: 'Brown Butter Sage Gnocchi',
+  description:
+  'Pillowy potato gnocchi tossed in nutty brown butter with crispy sage leaves and parmesan. Simple, elegant, and utterly delicious.',
+  category: 'Dinner',
+  cookTime: 30,
+  calories: 520,
+  image: 'https://images.unsplash.com/photo-1587740908075-9e245070dfaa?w=800',
+  tags: ['italian', 'vegetarian', 'comfort-food', 'elegant'],
+  ingredients: [
+  {
+    id: 'ing-3-1',
+    name: 'potato gnocchi',
+    amount: '1',
+    unit: 'lb',
+    note: 'fresh or frozen'
+  },
+  {
+    id: 'ing-3-2',
+    name: 'unsalted butter',
+    amount: '6',
+    unit: 'tablespoons'
+  },
+  { id: 'ing-3-3', name: 'fresh sage leaves', amount: '20', unit: '' },
+  {
+    id: 'ing-3-4',
+    name: 'parmesan',
+    amount: '1/2',
+    unit: 'cup',
+    note: 'grated'
+  },
+  { id: 'ing-3-5', name: 'lemon', amount: '1/2', unit: '' },
+  {
+    id: 'ing-3-6',
+    name: 'garlic',
+    amount: '2',
+    unit: 'cloves',
+    note: 'thinly sliced'
+  }],
+
+  instructions: [
+  {
+    id: 'inst-3-1',
+    step: 1,
+    text: 'Bring a large pot of salted water to boil. Cook gnocchi according to package directions until they float.'
+  },
+  {
+    id: 'inst-3-2',
+    step: 2,
+    text: 'While gnocchi cooks, melt butter in a large skillet over medium heat. Add sage leaves and garlic.'
+  },
+  {
+    id: 'inst-3-3',
+    step: 3,
+    text: 'Continue cooking butter, swirling pan, until it turns golden brown and smells nutty, about 4 minutes.'
+  },
+  {
+    id: 'inst-3-4',
+    step: 4,
+    text: 'Drain gnocchi (reserve 1/2 cup pasta water) and add to the brown butter. Toss gently.'
+  },
+  {
+    id: 'inst-3-5',
+    step: 5,
+    text: 'Add a splash of pasta water if needed. Finish with parmesan, lemon juice, and black pepper.'
+  }],
+
+  chefNotes:
+  'Watch the butter carefully — it can go from brown to burnt quickly. The sage should be crispy but not charred. For a richer dish, add a handful of toasted walnuts.',
+  additionalDetails:
+  'Best served immediately while the gnocchi are tender and the butter is fragrant. A simple arugula salad makes a perfect accompaniment.',
+  accessGroups: ['group-1', 'group-2', 'group-3'],
+  createdBy: 'user',
+  createdAt: '2026-04-15T18:00:00Z'
+},
+{
+  id: 'dish-4',
+  title: 'Miso Glazed Eggplant',
+  description:
+  'Tender Japanese eggplant with a sweet-savory miso glaze, broiled until caramelized. Umami-rich and deeply satisfying.',
+  category: 'Dinner',
+  cookTime: 35,
+  calories: 280,
+  image: 'https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=800',
+  tags: ['japanese', 'vegan', 'umami', 'healthy'],
+  ingredients: [
+  { id: 'ing-4-1', name: 'Japanese eggplant', amount: '3', unit: 'medium' },
+  {
+    id: 'ing-4-2',
+    name: 'white miso paste',
+    amount: '3',
+    unit: 'tablespoons'
+  },
+  { id: 'ing-4-3', name: 'mirin', amount: '2', unit: 'tablespoons' },
+  { id: 'ing-4-4', name: 'sake', amount: '1', unit: 'tablespoon' },
+  { id: 'ing-4-5', name: 'sugar', amount: '1', unit: 'tablespoon' },
+  { id: 'ing-4-6', name: 'sesame oil', amount: '1', unit: 'teaspoon' },
+  {
+    id: 'ing-4-7',
+    name: 'sesame seeds',
+    amount: '1',
+    unit: 'tablespoon',
+    note: 'toasted'
+  },
+  {
+    id: 'ing-4-8',
+    name: 'scallions',
+    amount: '2',
+    unit: '',
+    note: 'thinly sliced'
+  }],
+
+  instructions: [
+  {
+    id: 'inst-4-1',
+    step: 1,
+    text: 'Preheat broiler. Halve eggplants lengthwise and score flesh in a crosshatch pattern.'
+  },
+  {
+    id: 'inst-4-2',
+    step: 2,
+    text: 'Brush eggplant with sesame oil and place cut-side up on a baking sheet. Broil 10 minutes until tender.'
+  },
+  {
+    id: 'inst-4-3',
+    step: 3,
+    text: 'Meanwhile, whisk together miso, mirin, sake, and sugar until smooth.'
+  },
+  {
+    id: 'inst-4-4',
+    step: 4,
+    text: 'Brush miso glaze generously over eggplant. Return to broiler for 5-7 minutes until caramelized.'
+  },
+  {
+    id: 'inst-4-5',
+    step: 5,
+    text: 'Garnish with sesame seeds and scallions. Serve with steamed rice.'
+  }],
+
+  chefNotes:
+  "The key is to broil until the glaze bubbles and caramelizes but doesn't burn. If your broiler is very hot, move the rack down a notch. This technique works beautifully with other vegetables like zucchini or mushrooms.",
+  additionalDetails:
+  'Nasu dengaku (miso eggplant) is a classic Japanese dish. Serve as a main with rice and pickles, or as a side dish.',
+  accessGroups: ['group-1', 'group-2'],
+  createdBy: 'admin',
+  createdAt: '2026-04-18T12:00:00Z'
+},
+{
+  id: 'dish-5',
+  title: 'Spiced Carrot Soup',
+  description:
+  'Velvety carrot soup with warming spices, ginger, and a hint of orange. Comforting, nourishing, and beautifully colored.',
+  category: 'Lunch',
+  cookTime: 40,
+  calories: 210,
+  image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800',
+  tags: ['vegan', 'soup', 'healthy', 'comfort-food'],
+  ingredients: [
+  {
+    id: 'ing-5-1',
+    name: 'carrots',
+    amount: '2',
+    unit: 'lbs',
+    note: 'peeled and chopped'
+  },
+  {
+    id: 'ing-5-2',
+    name: 'onion',
+    amount: '1',
+    unit: 'large',
+    note: 'diced'
+  },
+  {
+    id: 'ing-5-3',
+    name: 'fresh ginger',
+    amount: '2',
+    unit: 'tablespoons',
+    note: 'grated'
+  },
+  {
+    id: 'ing-5-4',
+    name: 'garlic',
+    amount: '3',
+    unit: 'cloves',
+    note: 'minced'
+  },
+  { id: 'ing-5-5', name: 'cumin', amount: '1', unit: 'teaspoon' },
+  { id: 'ing-5-6', name: 'coriander', amount: '1', unit: 'teaspoon' },
+  { id: 'ing-5-7', name: 'vegetable stock', amount: '4', unit: 'cups' },
+  {
+    id: 'ing-5-8',
+    name: 'orange',
+    amount: '1',
+    unit: '',
+    note: 'zest and juice'
+  },
+  { id: 'ing-5-9', name: 'coconut milk', amount: '1/2', unit: 'cup' },
+  { id: 'ing-5-10', name: 'olive oil', amount: '2', unit: 'tablespoons' }],
+
+  instructions: [
+  {
+    id: 'inst-5-1',
+    step: 1,
+    text: 'Heat olive oil in a large pot. Sauté onion until soft, about 5 minutes.'
+  },
+  {
+    id: 'inst-5-2',
+    step: 2,
+    text: 'Add ginger, garlic, cumin, and coriander. Cook until fragrant, 1 minute.'
+  },
+  {
+    id: 'inst-5-3',
+    step: 3,
+    text: 'Add carrots and stock. Bring to boil, then simmer covered for 25 minutes until carrots are very tender.'
+  },
+  {
+    id: 'inst-5-4',
+    step: 4,
+    text: 'Blend soup until completely smooth using an immersion blender or regular blender.'
+  },
+  {
+    id: 'inst-5-5',
+    step: 5,
+    text: 'Stir in coconut milk, orange zest, and juice. Season with salt and pepper. Serve warm.'
+  }],
+
+  chefNotes:
+  'For extra depth, roast the carrots before adding to the soup. The orange brightens the natural sweetness of the carrots. Top with toasted pumpkin seeds and a drizzle of olive oil.',
+  additionalDetails:
+  'This soup freezes beautifully. Make a double batch and freeze in portions for easy weeknight meals.',
+  accessGroups: ['group-1'],
+  createdBy: 'admin',
+  createdAt: '2026-04-20T09:30:00Z'
+},
+{
+  id: 'dish-6',
+  title: 'Pistachio Rose Cake',
+  description:
+  'Delicate almond cake infused with rose water and studded with pistachios. Fragrant, moist, and beautifully Middle Eastern.',
+  category: 'Dessert',
+  cookTime: 60,
+  calories: 380,
+  image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800',
+  tags: ['dessert', 'middle-eastern', 'elegant', 'celebration'],
+  ingredients: [
+  { id: 'ing-6-1', name: 'almond flour', amount: '2', unit: 'cups' },
+  { id: 'ing-6-2', name: 'all-purpose flour', amount: '1', unit: 'cup' },
+  { id: 'ing-6-3', name: 'sugar', amount: '1', unit: 'cup' },
+  { id: 'ing-6-4', name: 'eggs', amount: '4', unit: 'large' },
+  {
+    id: 'ing-6-5',
+    name: 'unsalted butter',
+    amount: '3/4',
+    unit: 'cup',
+    note: 'melted'
+  },
+  { id: 'ing-6-6', name: 'rose water', amount: '2', unit: 'tablespoons' },
+  {
+    id: 'ing-6-7',
+    name: 'pistachios',
+    amount: '1',
+    unit: 'cup',
+    note: 'chopped'
+  },
+  { id: 'ing-6-8', name: 'baking powder', amount: '2', unit: 'teaspoons' },
+  { id: 'ing-6-9', name: 'salt', amount: '1/2', unit: 'teaspoon' },
+  { id: 'ing-6-10', name: 'yogurt', amount: '1/2', unit: 'cup' }],
+
+  instructions: [
+  {
+    id: 'inst-6-1',
+    step: 1,
+    text: 'Preheat oven to 350°F. Grease and line a 9-inch round cake pan.'
+  },
+  {
+    id: 'inst-6-2',
+    step: 2,
+    text: 'Whisk together almond flour, all-purpose flour, baking powder, and salt.'
+  },
+  {
+    id: 'inst-6-3',
+    step: 3,
+    text: 'In a separate bowl, beat eggs and sugar until pale and fluffy, about 3 minutes.'
+  },
+  {
+    id: 'inst-6-4',
+    step: 4,
+    text: 'Mix in melted butter, yogurt, and rose water. Fold in dry ingredients and half the pistachios.'
+  },
+  {
+    id: 'inst-6-5',
+    step: 5,
+    text: 'Pour into pan, top with remaining pistachios. Bake 45-50 minutes until golden and a toothpick comes out clean.'
+  },
+  {
+    id: 'inst-6-6',
+    step: 6,
+    text: 'Cool in pan 10 minutes, then turn out onto a wire rack. Dust with powdered sugar before serving.'
+  }],
+
+  chefNotes:
+  'Rose water can be strong — start with less and add more to taste. The almond flour keeps this cake incredibly moist. For a glaze, mix powdered sugar with a little rose water and drizzle over the cooled cake.',
+  additionalDetails:
+  'Serve with Turkish coffee or mint tea. This cake keeps well for 3 days at room temperature, covered.',
+  accessGroups: ['group-2', 'group-3'],
+  createdBy: 'user',
+  createdAt: '2026-04-22T16:00:00Z'
+},
+{
+  id: 'dish-7',
+  title: 'Honey Harissa Chicken',
+  description:
+  'Juicy roasted chicken thighs with a sticky honey-harissa glaze. Spicy, sweet, and irresistibly caramelized.',
+  category: 'Dinner',
+  cookTime: 45,
+  calories: 420,
+  image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=800',
+  tags: ['spicy', 'roasted', 'north-african', 'easy'],
+  ingredients: [
+  {
+    id: 'ing-7-1',
+    name: 'chicken thighs',
+    amount: '8',
+    unit: '',
+    note: 'bone-in, skin-on'
+  },
+  {
+    id: 'ing-7-2',
+    name: 'harissa paste',
+    amount: '3',
+    unit: 'tablespoons'
+  },
+  { id: 'ing-7-3', name: 'honey', amount: '3', unit: 'tablespoons' },
+  {
+    id: 'ing-7-4',
+    name: 'lemon',
+    amount: '1',
+    unit: '',
+    note: 'juice and zest'
+  },
+  {
+    id: 'ing-7-5',
+    name: 'garlic',
+    amount: '4',
+    unit: 'cloves',
+    note: 'minced'
+  },
+  { id: 'ing-7-6', name: 'olive oil', amount: '2', unit: 'tablespoons' },
+  { id: 'ing-7-7', name: 'cumin', amount: '1', unit: 'teaspoon' },
+  {
+    id: 'ing-7-8',
+    name: 'fresh cilantro',
+    amount: '1/4',
+    unit: 'cup',
+    note: 'chopped'
+  }],
+
+  instructions: [
+  {
+    id: 'inst-7-1',
+    step: 1,
+    text: 'Preheat oven to 425°F. Pat chicken dry and season with salt and pepper.'
+  },
+  {
+    id: 'inst-7-2',
+    step: 2,
+    text: 'Mix harissa, honey, lemon juice and zest, garlic, olive oil, and cumin in a bowl.'
+  },
+  {
+    id: 'inst-7-3',
+    step: 3,
+    text: 'Coat chicken thoroughly with the harissa mixture. Arrange skin-side up on a baking sheet.'
+  },
+  {
+    id: 'inst-7-4',
+    step: 4,
+    text: 'Roast for 35-40 minutes, basting halfway through, until skin is crispy and chicken is cooked through.'
+  },
+  {
+    id: 'inst-7-5',
+    step: 5,
+    text: 'Let rest 5 minutes. Garnish with cilantro and serve with couscous or roasted vegetables.'
+  }],
+
+  chefNotes:
+  'Adjust harissa amount based on your heat preference. The honey balances the spice beautifully. For extra crispy skin, broil for the last 2 minutes, watching carefully.',
+  additionalDetails:
+  'Pairs wonderfully with a simple cucumber yogurt sauce and warm pita bread.',
+  accessGroups: ['group-1', 'group-2'],
+  createdBy: 'admin',
+  createdAt: '2026-04-25T17:30:00Z'
+},
+{
+  id: 'dish-8',
+  title: 'Caramelized Onion Tart',
+  description:
+  'Buttery puff pastry topped with sweet caramelized onions, gruyere, and fresh thyme. Elegant and crowd-pleasing.',
+  category: 'Lunch',
+  cookTime: 75,
+  calories: 340,
+  image: 'https://images.unsplash.com/photo-1619096252214-ef06c45683e3?w=800',
+  tags: ['french', 'vegetarian', 'elegant', 'entertaining'],
+  ingredients: [
+  {
+    id: 'ing-8-1',
+    name: 'puff pastry',
+    amount: '1',
+    unit: 'sheet',
+    note: 'thawed'
+  },
+  {
+    id: 'ing-8-2',
+    name: 'yellow onions',
+    amount: '4',
+    unit: 'large',
+    note: 'thinly sliced'
+  },
+  {
+    id: 'ing-8-3',
+    name: 'gruyere cheese',
+    amount: '1',
+    unit: 'cup',
+    note: 'grated'
+  },
+  {
+    id: 'ing-8-4',
+    name: 'fresh thyme',
+    amount: '2',
+    unit: 'tablespoons',
+    note: 'leaves only'
+  },
+  { id: 'ing-8-5', name: 'butter', amount: '3', unit: 'tablespoons' },
+  { id: 'ing-8-6', name: 'olive oil', amount: '1', unit: 'tablespoon' },
+  {
+    id: 'ing-8-7',
+    name: 'balsamic vinegar',
+    amount: '1',
+    unit: 'tablespoon'
+  },
+  {
+    id: 'ing-8-8',
+    name: 'egg',
+    amount: '1',
+    unit: '',
+    note: 'beaten for egg wash'
+  }],
+
+  instructions: [
+  {
+    id: 'inst-8-1',
+    step: 1,
+    text: 'Caramelize onions: melt butter and oil in a large skillet over medium-low heat. Add onions and cook, stirring occasionally, for 45 minutes until deep golden.'
+  },
+  {
+    id: 'inst-8-2',
+    step: 2,
+    text: 'Stir in balsamic vinegar and half the thyme. Season with salt and pepper. Let cool slightly.'
+  },
+  {
+    id: 'inst-8-3',
+    step: 3,
+    text: 'Preheat oven to 400°F. Roll out puff pastry on a parchment-lined baking sheet.'
+  },
+  {
+    id: 'inst-8-4',
+    step: 4,
+    text: 'Score a 1-inch border around the pastry. Spread onions inside the border, top with gruyere and remaining thyme.'
+  },
+  {
+    id: 'inst-8-5',
+    step: 5,
+    text: 'Brush border with egg wash. Bake 25-30 minutes until pastry is golden and puffed. Serve warm.'
+  }],
+
+  chefNotes:
+  "Patience is key with caramelizing onions — don't rush it. The slow cooking develops incredible sweetness. This tart is delicious warm or at room temperature, making it perfect for entertaining.",
+  additionalDetails:
+  'Cut into squares for an appetizer or serve larger portions with a green salad for lunch.',
+  accessGroups: ['group-1', 'group-3'],
+  createdBy: 'user',
+  createdAt: '2026-04-28T11:00:00Z'
+},
+{
+  id: 'dish-9',
+  title: 'Coconut Lime Shrimp',
+  description:
+  'Quick-seared shrimp in a fragrant coconut-lime sauce with ginger and chili. Bright, tropical, and ready in minutes.',
+  category: 'Dinner',
+  cookTime: 20,
+  calories: 310,
+  image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800',
+  tags: ['seafood', 'quick', 'thai-inspired', 'healthy'],
+  ingredients: [
+  {
+    id: 'ing-9-1',
+    name: 'large shrimp',
+    amount: '1.5',
+    unit: 'lbs',
+    note: 'peeled and deveined'
+  },
+  { id: 'ing-9-2', name: 'coconut milk', amount: '1', unit: 'cup' },
+  {
+    id: 'ing-9-3',
+    name: 'lime',
+    amount: '2',
+    unit: '',
+    note: 'juice and zest'
+  },
+  {
+    id: 'ing-9-4',
+    name: 'fresh ginger',
+    amount: '1',
+    unit: 'tablespoon',
+    note: 'grated'
+  },
+  {
+    id: 'ing-9-5',
+    name: 'garlic',
+    amount: '3',
+    unit: 'cloves',
+    note: 'minced'
+  },
+  {
+    id: 'ing-9-6',
+    name: 'red chili',
+    amount: '1',
+    unit: '',
+    note: 'thinly sliced'
+  },
+  { id: 'ing-9-7', name: 'fish sauce', amount: '1', unit: 'tablespoon' },
+  { id: 'ing-9-8', name: 'brown sugar', amount: '1', unit: 'teaspoon' },
+  {
+    id: 'ing-9-9',
+    name: 'cilantro',
+    amount: '1/4',
+    unit: 'cup',
+    note: 'chopped'
+  },
+  {
+    id: 'ing-9-10',
+    name: 'vegetable oil',
+    amount: '2',
+    unit: 'tablespoons'
+  }],
+
+  instructions: [
+  {
+    id: 'inst-9-1',
+    step: 1,
+    text: 'Pat shrimp dry and season with salt and pepper.'
+  },
+  {
+    id: 'inst-9-2',
+    step: 2,
+    text: 'Heat oil in a large skillet over high heat. Sear shrimp 2 minutes per side until pink. Remove and set aside.'
+  },
+  {
+    id: 'inst-9-3',
+    step: 3,
+    text: 'Reduce heat to medium. Add ginger, garlic, and chili. Cook 30 seconds until fragrant.'
+  },
+  {
+    id: 'inst-9-4',
+    step: 4,
+    text: 'Pour in coconut milk, lime juice and zest, fish sauce, and sugar. Simmer 3 minutes.'
+  },
+  {
+    id: 'inst-9-5',
+    step: 5,
+    text: 'Return shrimp to pan and toss to coat. Garnish with cilantro. Serve over jasmine rice.'
+  }],
+
+  chefNotes:
+  "Don't overcook the shrimp — they should be just opaque. The sauce should be slightly thickened but still pourable. Add more chili if you like heat.",
+  additionalDetails:
+  'This dish comes together incredibly quickly, making it perfect for weeknight dinners. Serve with steamed jasmine rice and a squeeze of fresh lime.',
+  accessGroups: ['group-1', 'group-2'],
+  createdBy: 'admin',
+  createdAt: '2026-05-01T19:00:00Z'
+},
+{
+  id: 'dish-10',
+  title: 'Roasted Tomato Burrata Salad',
+  description:
+  'Sweet roasted cherry tomatoes with creamy burrata, fresh basil, and balsamic reduction. Simple summer perfection.',
+  category: 'Lunch',
+  cookTime: 30,
+  calories: 290,
+  image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800',
+  tags: ['vegetarian', 'italian', 'summer', 'fresh'],
+  ingredients: [
+  { id: 'ing-10-1', name: 'cherry tomatoes', amount: '2', unit: 'pints' },
+  { id: 'ing-10-2', name: 'burrata', amount: '8', unit: 'oz' },
+  {
+    id: 'ing-10-3',
+    name: 'fresh basil',
+    amount: '1',
+    unit: 'cup',
+    note: 'leaves'
+  },
+  {
+    id: 'ing-10-4',
+    name: 'garlic',
+    amount: '4',
+    unit: 'cloves',
+    note: 'smashed'
+  },
+  { id: 'ing-10-5', name: 'olive oil', amount: '1/4', unit: 'cup' },
+  { id: 'ing-10-6', name: 'balsamic vinegar', amount: '1/4', unit: 'cup' },
+  { id: 'ing-10-7', name: 'flaky sea salt', amount: '1', unit: 'teaspoon' },
+  {
+    id: 'ing-10-8',
+    name: 'crusty bread',
+    amount: '4',
+    unit: 'slices',
+    note: 'for serving'
+  }],
+
+  instructions: [
+  {
+    id: 'inst-10-1',
+    step: 1,
+    text: 'Preheat oven to 400°F. Toss tomatoes with olive oil, garlic, salt, and pepper on a baking sheet.'
+  },
+  {
+    id: 'inst-10-2',
+    step: 2,
+    text: 'Roast 20-25 minutes until tomatoes are blistered and starting to burst.'
+  },
+  {
+    id: 'inst-10-3',
+    step: 3,
+    text: 'Meanwhile, simmer balsamic vinegar in a small pot until reduced by half and syrupy, about 8 minutes.'
+  },
+  {
+    id: 'inst-10-4',
+    step: 4,
+    text: 'Arrange roasted tomatoes on a platter. Tear burrata into pieces and nestle among the tomatoes.'
+  },
+  {
+    id: 'inst-10-5',
+    step: 5,
+    text: 'Drizzle with balsamic reduction and olive oil. Top with basil leaves and flaky salt. Serve with crusty bread.'
+  }],
+
+  chefNotes:
+  "Use the best tomatoes you can find — this dish is all about quality ingredients. The warm tomatoes slightly melt the burrata, creating a luscious sauce. Don't skip the flaky salt — it adds the perfect finishing touch.",
+  additionalDetails:
+  'This is peak summer eating. Serve as a starter, light lunch, or alongside grilled meats. The roasted tomatoes can be made ahead and served at room temperature.',
+  accessGroups: ['group-1', 'group-2', 'group-3'],
+  createdBy: 'user',
+  createdAt: '2026-05-05T13:00:00Z'
+}];

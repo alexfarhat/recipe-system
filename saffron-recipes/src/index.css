@@ -1,0 +1,43 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --color-canvas: #F6F3EE;
+  --color-surface: #FFFFFF;
+  --color-primary: #7A1F1F;
+  --color-primary-hover: #5E1818;
+  --color-accent: #B08D57;
+  --color-forest: #2F4A3E;
+  --color-tomato: #B23A3A;
+  --color-text-dark: #1F1B18;
+  --color-text-muted: #6B6259;
+  --color-border: #E5E0D8;
+  --color-border-strong: #D6CFC2;
+}
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--color-canvas);
+  color: var(--color-text-dark);
+  font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', 'Georgia', serif;
+  font-feature-settings: 'ss01';
+  letter-spacing: -0.01em;
+}
+* {
+  box-sizing: border-box;
+}
+/* Subtle focus ring */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
