@@ -88,7 +88,6 @@ Same as resetting any user's password — edit your own account from Manage → 
 
 ## Security checklist (for the site owner)
 
-- [ ] Change admin password from default `admin123`
 - [ ] Rotate the MySQL user password if it was ever exposed
 - [ ] Verify `api/.htaccess` is blocking direct access to `config.php` (try visiting `recipes.afarhat.net/api/config.php` — should 403)
 - [ ] Keep PHP version up to date in cPanel
