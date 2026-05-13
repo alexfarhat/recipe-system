@@ -5,9 +5,8 @@
 
 1. Go to [recipes.afarhat.net](https://recipes.afarhat.net)
 2. You'll land on the login screen
-3. Default admin credentials (change these immediately):
-   - **Email:** `admin@saffron.app`
-   - **Password:** `admin123`
+3. Default admin credentials
+
 
 ---
 
