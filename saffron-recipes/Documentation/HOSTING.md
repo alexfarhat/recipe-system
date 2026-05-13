@@ -137,10 +137,6 @@ Visit [https://recipes.afarhat.net](https://recipes.afarhat.net).
 - The login screen appears.
 
 Log in with the default admin:
-- Email: `admin@saffron.app`
-- Password: `admin123`
-
-**Change this password immediately** via Manage → Users.
 
 ---
 
